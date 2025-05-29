@@ -10,7 +10,6 @@ import { useViewStore } from "@/store/viewStore";
 import ActionButtons from "./components/ActionButtons";
 import ControlButtons from "./components/ControlButtons";
 import InfoHeader from "./components/InfoHeader";
-import MediaAndFiles from "./components/MediaAndFiles";
 import MembersList from "./components/MembersList";
 import ProfileSection from "./components/ProfileSection";
 
@@ -38,8 +37,6 @@ const ChatInfo = () => {
             <ActionButtons />
 
             <Separator />
-
-            <MediaAndFiles />
 
             {conversation.isGroup && (
               <MembersList participants={conversation.participants || []} />
